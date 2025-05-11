@@ -2,8 +2,8 @@ import * as React from "react";
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen w-full bg-white flex items-center justify-center px-6 md:px-10">
-      <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">
+    <div className="min-h-screen w-full bg-white flex items-center justify-center  ">
+      <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl mx-6 md:mx-10">
        
 
         {/* Text Content */}
@@ -15,9 +15,16 @@ const LandingPage = () => {
             UMUSHONGE Flour is a nutritious, high-quality multigrain flour blend designed to
             enhance health and wellness while promoting Rwandan agricultural products.
           </p>
-          <button className="bg-yellow-500 text-green-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 shadow-md transition duration-300">
+          <div className="flex gap-3">
+             <button className="bg-yellow-500 text-green-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 shadow-md transition duration-300">
             Shop Now
           </button>
+           <button className="bg-green-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-500 shadow-md transition duration-300">
+            Learn more...
+          </button>
+
+          </div>
+          
         </div>
          {/* Logo */}
         <div className="flex justify-center">

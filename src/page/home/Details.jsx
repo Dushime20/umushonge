@@ -2,7 +2,7 @@ import React from 'react'
 
 const Details = () => {
   return (
-    <div className='flex  p-6 md:mx-10 gap-8'>
+    <div className='flex mx-auto p-6 gap-8'>
         <div className='flex-1'>
              <img src="/image/img3.jpg" alt="image" />
         </div>
