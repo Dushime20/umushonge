@@ -10,7 +10,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-yellow-600">UMUSHONGE</h3>
             <p className="text-gray-400">
-              Your trusted platform for seamless property rentals in Rwanda. We connect landlords and tenants directly for a faster, more transparent rental experience.
+              UMUSHONGE Flour is a nutritious, high-quality multigrain flour blend designed to enhance health and wellness while promoting Rwandan agricultural products. 
+              
             </p>
           </div>
 
@@ -21,15 +22,16 @@ const Footer = () => {
               <li><a href="/" className="text-gray-400 ">Home</a></li>
               <li><a href="/about" className="text-gray-400 ">About Us</a></li>
               <li><a href="/contact" className="text-gray-400 ">Contact</a></li>
-              <li><a href="/privacy-policy" className="text-gray-400">Privacy Policy</a></li>
+              <li><a href="/privacy-policy" className="text-gray-400">Shop</a></li>
             </ul>
           </div>
 
           {/* Column 3: Contact */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-yellow-600">Contact</h3>
-            <p className="text-gray-400">Phone: +250 123 456 789</p>
-            <p className="text-gray-400">Email: info@rentalhub.rw</p>
+            <p className="text-gray-400">Phone: +250 78807704</p>
+            <p className="text-gray-400">Customers: +250 798580856</p>
+            <p className="text-gray-400">Email: golden250gramsltd@gmail.com</p>
             <p className="text-gray-400">Address: Kigali, Rwanda</p>
           </div>
 
@@ -57,7 +59,7 @@ const Footer = () => {
         <div className='bg-white h-[1px] m-8'></div>
         <div className=" text-center">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} IKTECH. All rights reserved.
+            &copy; {new Date().getFullYear()} UMUSHONGE. All rights reserved.
           </p>
         </div>
       </div>
