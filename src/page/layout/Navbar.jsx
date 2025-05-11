@@ -20,7 +20,7 @@ const NavBar = () => {
         {/* Logo */}
         <div className="flex gap-3">
           {/* <span>
-            <img src="../../../public/image/logo.PNG" alt="log" class="w-10 h-auto" />
+            <img src="image/logo.jpg" alt="log" class="w-10 h-auto" />
 
             </span> */}
           <NavLink
@@ -105,7 +105,7 @@ const NavBar = () => {
             <AiOutlineClose size={30} className="text-white" onClick={handleNav} />
           </div> */}
           <div className="flex justify-center items-center m-5">
-            <img src="/image/logo.PNG" alt=" logo" 
+            <img src="/image/logo.jpg" alt=" logo" 
             className="w-20 h-20"/>
           </div>
           <ul className="space-y-6 text-center mt-8">
