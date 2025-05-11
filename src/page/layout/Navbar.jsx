@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <div className="sticky top-0 z-50 bg-white">
-      <div className="flex items-center justify-between px-6 lg:px-28 max-w-[1280px] mx-auto h-20">
+      <div className="flex items-center justify-between px-6 md:px-10 max-w-[1280px] mx-auto h-20">
         {/* Logo */}
         <div className="flex gap-3">
           {/* <span>

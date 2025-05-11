@@ -2,7 +2,7 @@ import * as React from "react";
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen w-full bg-white flex items-center justify-center px-6 md:px-20">
+    <div className="min-h-screen w-full bg-white flex items-center justify-center px-6 md:px-10">
       <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">
        
 

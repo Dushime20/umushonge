@@ -73,7 +73,7 @@ const Feature = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-3 mt-3 bg-gray-100">
+    <div className="container mx-auto p-6 md:mx-10 mt-3 bg-gray-100">
       <div className="flex justify-between items-center mb-8">
         <h1 className="text-3xl font-bold text-yellow-600">New</h1>
         <div className="flex gap-4">
