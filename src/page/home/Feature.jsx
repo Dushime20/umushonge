@@ -7,6 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { NavLink } from 'react-router-dom';
 
 const Feature = () => {
   const [api, setApi] = useState();
@@ -31,54 +32,52 @@ const Feature = () => {
 
   // Sample product data
   const products = [
-    {
+   {
       id: 1,
-      name: "Gaming Laptop Pro",
-      price: 1299.99,
+      name: "Agahebuzo",
+      quantity: 1,
+      price: 2500,
       rating: 4.5,
-      image: "/iktechimage/img13.jpg",
-      category: "Laptops"
+      
+      image: "/image/img1.jpg",
+      category: "Umushonge Flour"
     },
     {
       id: 2,
-      name: "Mechanical Keyboard",
-      price: 129.99,
+      name: "Urugwiro",
+      quantity: 2,
+      price: 4000,
       rating: 4.8,
-      image: "/iktechimage/img11.jpg",
-      category: "Accessories"
+     
+      image: "/image/img2.jpg",
+      category: "Umushonge Flour"
     },
     {
       id: 3,
-      name: "4K Gaming Monitor",
-      price: 499.99,
+      name: "Ibyishimo",
+      quantity: 3,
+      price: 6000,
       rating: 4.7,
-      image: "/iktechimage/img10.jpg",
-      category: "Monitors"
+      image: "/image/img3.jpg",
+      category: "Umushonge Flour"
     },
     {
       id: 4,
-      name: "RGB Mouse",
-      price: 79.99,
+      name: "Umunezero",
+      quantity: 5,
+      price: 10000,
       rating: 4.6,
-      image: "/iktechimage/img4.jpg",
-      category: "Accessories"
+      image: "/image/img4.jpg",
+      category: "Umushonge Flour"
     },
-    {
-        id: 4,
-        name: "RGB Mouse",
-        price: 79.99,
-        rating: 4.6,
-        image: "/iktechimage/img7.jpg",
-        category: "Accessories"
-      },
   ];
 
   return (
-    <div className="container mx-auto px-4 py-3 ">
+    <div className="container mx-auto px-4 py-3 mt-3 bg-gray-100">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-yellow-600">Latest Products</h1>
+        <h1 className="text-3xl font-bold text-yellow-600">New</h1>
         <div className="flex gap-4">
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600">
+          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-green-600">
             View All
           </button>
         </div>
@@ -94,7 +93,9 @@ const Feature = () => {
       >
         <CarouselContent className="-ml-2 md:-ml-4">
           {products.map((product) => (
-            <CarouselItem key={product.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4">
+           
+             <CarouselItem key={product.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4">
+              <NavLink to={"/details"}>
               <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative">
                   <img 
@@ -108,8 +109,9 @@ const Feature = () => {
                 </div>
 
                 <div className="p-4">
-                  <span className="text-sm text-blue-600 font-medium">{product.category}</span>
+                  <span className="text-sm text-green-600 font-medium">{product.category}</span>
                   <h2 className="text-lg font-semibold text-gray-800 mt-1">{product.name}</h2>
+                  <h2 className="text-lg font-semibold text-gray-800 mt-1">{product.quantity} kg</h2>
                   
                   <div className="flex items-center mt-2">
                     <div className="flex items-center">
@@ -122,15 +124,17 @@ const Feature = () => {
 
                   <div className="flex justify-between items-center mt-4">
                     <span className="text-xl font-bold text-gray-800">
-                      ${product.price}
+                      {product.price} Rwf
                     </span>
-                    <button className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+                    <button className="p-2 rounded-full bg-green-800 text-white hover:bg-green-600 transition-colors duration-300">
                       <ShoppingCart className="w-5 h-5" />
                     </button>
                   </div>
                 </div>
               </div>
+              </NavLink>
             </CarouselItem>
+           
           ))}
         </CarouselContent>
         <CarouselPrevious />

@@ -2,21 +2,21 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-[#070b17] text-white py-6 mt-12 border-t-2">
+    <div className="bg-green-900 text-white py-6  mt-3">
       <div className="max-w-6xl mx-auto px-6 sm:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           
           {/* Column 1: Company Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">IKTECH</h3>
-            <p className="text-white">
+            <h3 className="text-xl font-semibold mb-4 text-yellow-600">UMUSHONGE</h3>
+            <p className="text-gray-400">
               Your trusted platform for seamless property rentals in Rwanda. We connect landlords and tenants directly for a faster, more transparent rental experience.
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-4 text-yellow-600">Quick Links</h3>
             <ul>
               <li><a href="/" className="text-gray-400 ">Home</a></li>
               <li><a href="/about" className="text-gray-400 ">About Us</a></li>
@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Column 3: Contact */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Contact</h3>
+            <h3 className="text-xl font-semibold mb-4 text-yellow-600">Contact</h3>
             <p className="text-gray-400">Phone: +250 123 456 789</p>
             <p className="text-gray-400">Email: info@rentalhub.rw</p>
             <p className="text-gray-400">Address: Kigali, Rwanda</p>
@@ -35,7 +35,7 @@ const Footer = () => {
 
           {/* Column 4: Social Media */}
           <div>
-            <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-xl font-semibold mb-4 text-yellow-600">Follow Us</h3>
             <div className="flex flex-col">
               <a href="#" className="text-gray-400">
                 <i className="fab fa-facebook-f">Facebook</i> {/* Replace with actual icon */}

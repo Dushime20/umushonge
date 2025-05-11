@@ -33,52 +33,51 @@ const Accessories = () => {
   const products = [
     {
       id: 1,
-      name: "Gaming Laptop Pro",
-      price: 1299.99,
+      name: "Agahebuzo",
+      quantity: 1,
+      price: 2500,
       rating: 4.5,
-      image: "/iktechimage/img14.jpg",
-      category: "Laptops"
+      
+      image: "/image/img1.jpg",
+      category: "Umushonge Flour"
     },
     {
       id: 2,
-      name: "Mechanical Keyboard",
-      price: 129.99,
+      name: "Urugwiro",
+      quantity: 2,
+      price: 4000,
       rating: 4.8,
-      image: "/iktechimage/img15.jpg",
-      category: "Accessories"
+     
+      image: "/image/img2.jpg",
+      category: "Umushonge Flour"
     },
     {
       id: 3,
-      name: "4K Gaming Monitor",
-      price: 499.99,
+      name: "Ibyishimo",
+      quantity: 3,
+      price: 6000,
       rating: 4.7,
-      image: "/iktechimage/img9.jpg",
-      category: "Monitors"
+      image: "/image/img3.jpg",
+      category: "Umushonge Flour"
     },
     {
       id: 4,
-      name: "RGB Mouse",
-      price: 79.99,
+      name: "Umunezero",
+      quantity: 5,
+      price: 10000,
       rating: 4.6,
-      image: "/iktechimage/img11.jpg",
-      category: "Accessories"
+      image: "/image/img4.jpg",
+      category: "Umushonge Flour"
     },
-    {
-        id: 4,
-        name: "RGB Mouse",
-        price: 79.99,
-        rating: 4.6,
-        image: "/iktechimage/img3.jpg",
-        category: "Accessories"
-      },
+    
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 mt-5 bg-gray-100 ">
+    <div className="container mx-auto px-4 py-8 bg-gray-100  mt-3">
       <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-yellow-600">Computer Accessories</h1>
+        <h1 className="text-3xl font-bold text-yellow-600">Umushonge product</h1>
         <div className="flex gap-4">
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600">
+          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-green-600">
             View All
           </button>
         </div>
@@ -108,8 +107,9 @@ const Accessories = () => {
                 </div>
 
                 <div className="p-4">
-                  <span className="text-sm text-blue-600 font-medium">{product.category}</span>
+                  <span className="text-sm text-green-800 font-medium">{product.category}</span>
                   <h2 className="text-lg font-semibold text-gray-800 mt-1">{product.name}</h2>
+                   <h2 className="text-lg font-semibold text-gray-800 mt-1">{product.quantity} Kg</h2>
                   
                   <div className="flex items-center mt-2">
                     <div className="flex items-center">
@@ -122,9 +122,9 @@ const Accessories = () => {
 
                   <div className="flex justify-between items-center mt-4">
                     <span className="text-xl font-bold text-gray-800">
-                      ${product.price}
+                      {product.price} Rwf
                     </span>
-                    <button className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300">
+                    <button className="p-2 rounded-full bg-green-600 text-white hover:bg-green-600 transition-colors duration-300">
                       <ShoppingCart className="w-5 h-5" />
                     </button>
                   </div>

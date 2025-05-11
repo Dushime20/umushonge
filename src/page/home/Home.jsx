@@ -8,7 +8,7 @@ import Accessories from './Accessoir'
 
 const Home = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden '>
        <div>
          <Landingpage/>
          </div>
